@@ -8,17 +8,14 @@ Minecraft Java 1.21.10 速通练习工具 — 纯命令方块，无数据包。
 ## 文件结构
 
 ```
-project/
-  config_barrels.py    ← 桶的物品配置（改这个）
-  config_layout.py     ← 热键栏布局     （改这个）
-  mpk_build.py         ← 生成脚本       （跑这个）
-hotbar.nbt             ← 生成的热键文件  （复制到 minecraft）
+config_barrels.py    ← 桶的物品配置（改这个）
+config_layout.py     ← 热键栏布局     （改这个）
+mpk_build.py         ← 生成脚本       （跑这个）
 ```
 
 ## 快速开始
 
 ```bash
-cd project
 pip install nbtlib
 python mpk_build.py
 ```
