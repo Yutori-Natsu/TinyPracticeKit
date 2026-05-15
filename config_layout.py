@@ -9,7 +9,7 @@ Empty slots (air) fill the remaining positions between barrels and engine.
 # Order: slot 1, 2, 3, ... (left to right)
 # Engine CB always goes in slot 9.
 
-from project.config_barrels import BASTION, END_CITY, STRONGHOLD, HDWGH
+from config_barrels import BASTION, END_CITY, STRONGHOLD, HDWGH
 
 # Barrels in hotbar order (slot 1, 2, 3, 4)
 BARRELS = [BASTION, STRONGHOLD, END_CITY, HDWGH]

@@ -9,8 +9,8 @@ import nbtlib
 from nbtlib.tag import Compound, List, String, Byte, Int, Short
 
 # ── Config ──
-from project.config_barrels import ALL_BARRELS
-from project.config_layout import BARRELS, ENGINE_SLOT
+from config_barrels import ALL_BARRELS
+from config_layout import BARRELS, ENGINE_SLOT
 
 DATA_VERSION = 3465
 S = "storage mpk:main"
@@ -339,7 +339,7 @@ def build_hotbar(chain):
     # Engine CB
     eng_full = build_engine(chain)
     row0.append(make_cb("minecraft:repeating_command_block",
-        '{"text":"MiniPracticeKit v1.0","bold":true,"color":"aqua"}', eng_full))
+        '{"text":"TinyPracticeKit v0.1","bold":true,"color":"dark_aqua"}', eng_full))
     # Fill remaining slots
     while len(row0) < 9:
         row0.append(air())
@@ -354,7 +354,7 @@ def build_hotbar(chain):
 
 # ── Main ──
 
-def main(out="D:/tmp/260509/hotbar.nbt"):
+def main(out="hotbar.nbt"):
     chain = build_chain()
     hotbar = build_hotbar(chain)
     nbtlib.File(hotbar).save(out, gzipped=False)
